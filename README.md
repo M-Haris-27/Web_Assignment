@@ -54,11 +54,10 @@ This project is a fully responsive weather dashboard that provides current weath
    - Click "Sort Ascending" or "Sort Descending" to reorder temperatures.
    - Use "Filter Rain Days" to show only rainy weather forecasts.
    - Click "Highest Temperature" to highlight the warmest day.
-   - Use "Remove Filters" to reset the table to its original state.
 
 4. **Use the Chatbot**:
-   - Type your weather-related questions in the chat input.
-   - Click "Send" or press Enter to get AI-generated responses based on the displayed data.
+   - Type your weather-related or general questions in the chat input.
+   - Click "Send" or press Enter to get AI-generated responses.
 
 ## File Structure
 
