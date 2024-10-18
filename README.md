@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a fully responsive weather dashboard that provides current weather information and a 5-day forecast for any city. It integrates with the OpenWeather API for weather data and uses Google's Generative AI for a chatbot feature. The dashboard includes data visualization using Chart.js and offers various data manipulation options.
+This project is a fully responsive weather dashboard that provides current weather information and a 5-day forecast for any city. It integrates with the OpenWeather API for weather data and uses Gemini AI for a chatbot feature. The dashboard includes data visualization using Chart.js and offers various data manipulation options.
 
 ## Features
 
@@ -17,7 +17,7 @@ This project is a fully responsive weather dashboard that provides current weath
    - Allows sorting temperatures in ascending and descending order.
    - Filters data to show only rainy days.
    - Highlights the day with the highest temperature.
-5. **Chatbot Integration**: Uses Google's Generative AI to answer user queries about the displayed weather data.
+5. **Chatbot Integration**: Uses Gemini AI to answer user queries about the displayed weather data.
 
 ## Technologies Used
 
@@ -34,7 +34,7 @@ This project is a fully responsive weather dashboard that provides current weath
 2. Open the project folder in your preferred code editor.
 3. Ensure you have valid API keys for:
    - OpenWeather API
-   - Google Generative AI
+   - Gemini API
 4. Replace the placeholder API keys in the JavaScript files with your actual API keys:
    - In `script.js`: Replace `'API KEY'` with your OpenWeather API key.
    - In the chatbot section: Replace `'API KEY'` with your Gemini API key.
