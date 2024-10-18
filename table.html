@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">Weather App</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="main-content" role="main">
+            <header class="header">
+                <div class="search-container">
+                    <input type="text" id="city-input" class="search-bar" placeholder="Enter city name">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
+                <div>
+                    <button id="unit-toggle" class="unit-toggle">°C</button> <!-- Unit Conversion Toggle -->
+                </div>
+                <div class="user-profile">User Profile</div>
+            </header>
+    
+            <div class="filter-buttons">
+                <button id="sort-asc">Sort Temps Ascending</button>
+                <button id="sort-desc">Sort Temps Descending</button>
+                <button id="filter-rain">Filter Rainy Days</button>
+                <button id="highest-temp">Highest Temperature Day</button>
+            </div>
+    
+            <div id="loading-spinner" class="loading-spinner" style="display: none;">
+                
+            </div>            
+
+            <section class="table-section">
+                <div class="table">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Temperature</th>
+                                    <th>Weather</th>
+                                    <th>Humidity</th>
+                                    <th>Wind Speed</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                <!-- Table content will be dynamically inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <button id="prev-btn">Previous</button>
+                        <span id="page-info">Page 1</span>
+                        <button id="next-btn">Next</button>
+                    </div>
+                </div>
+    
+                <div class="chatbot">
+                    <div id="chat-messages" class="chat-messages"></div>
+                    <div class="chat-input-container">
+                        <input type="text" id="chat-input" placeholder="Ask about the weather...">
+                        <button id="chat-button">Send</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="script1.js"></script>
+</body>
+
+</html>

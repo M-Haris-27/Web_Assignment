@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="loading-spinner" id="loading-spinner" style="display: none;"></div> <!-- Loading Spinner -->
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="logo">Weather App</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="table.html">Tables</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="header">
+                <div class="search-container">
+                    <input type="text" id="city-input" class="search-bar" placeholder="Enter city name...">
+                    <button id="search-button" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div>
+                    <button id="unit-toggle" class="unit-toggle">°C</button> <!-- Unit Conversion Toggle -->
+                </div>
+                <div class="user-profile">User Profile</div>
+            </div>
+
+            <section class="weather-data">
+                <div id="weather-info" class="weather-info">
+                    Enter a city to get weather data
+                </div>
+            </section>
+
+            <div class="temperature-charts">
+                <div class="chart temperature-chart">
+                    <canvas id="barChartCanvas"></canvas>
+                </div>
+                <div class="chart temperature-chart">
+                    <canvas id="lineChartCanvas"></canvas>
+                </div>
+            </div>
+            <div class="chart pie-chart">
+                <canvas id="pieChartCanvas"></canvas>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
