@@ -65,7 +65,7 @@ This project is a fully responsive weather dashboard that provides current weath
 - `index.html`: Main dashboard page
 - `table.html`: Forecast table page
 - `style.css`: Styles for the dashboard
-- `style.css`: Styles for the dashboard
+- `styles.css`: Styles for the table page
 - `script.js`: Main JavaScript file for dashboard functionality
 - `script1.js`: JavaScript file for table and data manipulation features
 
